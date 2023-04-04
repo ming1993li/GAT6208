@@ -2,7 +2,7 @@
 
 This is a pytorch re-implementation from scratch of the [Graph Attention Network (GAT)](https://openreview.net/pdf?id=rJXMpikCZ) published at ICLR 2018. This implementation uses the standard citation network benchmark dataset Cora for transductive learning. The dataset processing part refers to [this repository](https://github.com/Diego999/pyGAT)
 
-# Significant network modifications
+# Network modifications
 
 In this implementation, I use cross-entropy losses derived from multiple Graph Attentional Layers (GALs) for supervising 
 class prediction, i.e., multi-head prediction. For training, these losses are equally weighted, while, the corresponding logits are combined 
